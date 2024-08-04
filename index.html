@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="mb-3 col-3">
+                <label for="1Parcial" class="form-label">Primer Parcial</label>
+                <input type="number" class="form-control" id="1P">
+            </div>
+
+            <div class="mb-3 col-3">
+                <label for="2Parcial" class="form-label">Segundo Parcial</label>
+                <input type="number" class="form-control" id="2P">
+            </div>
+
+            <div class="mb-3 col-3">
+                <label for="3Parcial" class="form-label">Tercer Parcial</label>
+                <input type="number" class="form-control" id="3P">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="Resultado" class="form-label">Total</label>
+                <input type="number" class="form-control" id="total" readonly>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="Resultado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="mensaje" readonly>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-3">
+                <button type="button" onclick="calcular()" class="btn btn-success">Calcular</button>
+                <button type="button" onclick="limpiar()" class="btn btn-danger">Limpiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     
